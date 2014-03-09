@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ad_unit_id">ca-app-pub-2403144300532691/4858530366</string>
+ <string name="not_supported">Sorry, your device either doesn\'t have an LED or the camera is in use :(</string>
+ <string name="flashlight">Flashlight +</string>
+ <string name="testname">Flashlight +</string>
+    <string name="exit">Exit</string>
+</resources>

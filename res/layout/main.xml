@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:gravity="bottom"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adtabe"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:background="#27ae60"
+        android:orientation="vertical"
+        android:weightSum="1" >
+        
+        <TableRow
+            android:id="@+id/right"
+          android:background="#06799F"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1" 
+           android:gravity="center">
+           
+        <android.widget.VerticalSeekBar
+            android:id="@+id/seekBar"
+            style="@style/seekTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:max="10"
+            android:progress="0" />
+        
+        </TableRow>
+        
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/adtabe"
+       android:layout_marginBottom="5dp"
+       android:layout_marginRight="150dp"
+       android:orientation="vertical"
+       android:weightSum="1" >
+
+      <TableRow
+          android:id="@+id/topleft"
+          android:background="#3498db"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.50" 
+           android:gravity="center">
+
+           <ToggleButton
+               android:id="@+id/light_switch"
+               style="@style/customToggleButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/custom_toggle_bg" />
+
+</TableRow>
+
+         <TableRow
+             android:id="@+id/bottomleft"
+          android:background="#2980b9"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.50" 
+           android:gravity="center">
+
+             <TextView
+                 android:id="@+id/txtmode"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="0"
+                 android:textColor="#ffffff"
+                 android:textSize="130sp" />
+
+</TableRow>
+
+    </LinearLayout>
+    
+   <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"/>
+   
+  <TableRow
+             android:id="@+id/adtabe"
+          android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:gravity="center"> 
+            
+   <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_unit_id" >           
+        </com.google.android.gms.ads.AdView>
+        
+</TableRow>
+</RelativeLayout>

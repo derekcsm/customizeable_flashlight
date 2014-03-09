@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+     
+        <color name="light_blue">#101863</color>
+        <color name="medium_blue">#040B63</color>
+        <color name="dark_blue">#010947</color>
+                
+        <color name="light_green">#178445</color>
+        <color name="medium_green">#076326</color>
+        <color name="dark_green">#093819</color>      
+        
+        <color name="light_orange">#E26619</color>
+        <color name="medium_orange">#D63502</color>
+        <color name="dark_orange">#35130B</color>
+        
+        <color name="light_red">#7F0B0E</color>
+        <color name="medium_red">#94383B</color>
+        <color name="dark_red">#530000</color>
+        
+        <color name="light_turq">#0393A6</color>
+        <color name="medium_turq">#026C79</color>
+        <color name="dark_turq">#004751</color>
+        
+        <color name="light_midnight">#34495e</color>
+        <color name="medium_midnight">#2c3e50</color>
+        <color name="dark_midnight">#15142C</color>
+        
+        <color name="rasta_red">#a31315</color>
+        <color name="rasta_yellow">#EF8F07</color>
+        <color name="rasta_green">#003100</color>
+        
+        <color name="beach_sand">#54433B</color>
+        <color name="beach_lightblue">#2980b9</color>
+        <color name="beach_darkblue">#004751</color>
+        
+        <color name="camo_brown">#37221D</color>
+        <color name="camo_green">#015B27</color>
+        <color name="camo_dark">#1d1d4f</color>	
+        
+        <color name="carbon_medium">#262626</color>
+        <color name="carbon_light">#3f3f3f</color>
+        <color name="carbon_dark">#161616</color>	
+        
+</resources>
