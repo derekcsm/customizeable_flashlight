@@ -28,7 +28,8 @@
         <activity
             android:name="flash.light.pro.FlashlightActivity"
             android:label="@string/flashlight"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Flashlight" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

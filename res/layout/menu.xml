@@ -1,143 +1,128 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2a2d33"
     android:gravity="top" >
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerVertical="true">
+ <com.beardedhen.androidbootstrap.BootstrapButton
+     android:id="@+id/setbtn"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_centerHorizontal="true"
+     android:text="SET"
+     android:textSize="30sp"
+     bootstrapbutton:bb_icon_left="fa-check"
+     bootstrapbutton:bb_size="large"
+     bootstrapbutton:bb_type="primary" />
 
-<LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true" >
 
-    <TableRow
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center_vertical" >
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:gravity="left"
-                android:text="Pick your favourite color scheme!"
-                android:textColor="#FBFCF7"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" >
-
-     <RadioGroup
-         android:id="@+id/radioColor"
-         android:layout_width="wrap_content"
+     <LinearLayout
+         android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:layout_marginBottom="5dp" >
- 
-        <RadioButton
-            android:id="@+id/random"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Random" />
- 
-        <RadioButton
-            android:id="@+id/blue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Blue" />
-        
-        <RadioButton
-            android:id="@+id/green"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Green" />
- 
-        <RadioButton
-            android:id="@+id/orange"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Orange" />
-        
-        <RadioButton
-            android:id="@+id/red"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Red" />
-        
-        <RadioButton
-            android:id="@+id/turquoise"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Turquoise" />
- 
-        <RadioButton
-            android:id="@+id/midnight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Midnight" />
-        
-        <RadioButton
-            android:id="@+id/rasta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Rasta" />
-        
-        <RadioButton
-            android:id="@+id/beach"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Beach" />
-        
-        <RadioButton
-            android:id="@+id/camo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Camo" />
-        
-        <RadioButton
-            android:id="@+id/carbon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Carbon" />
-        
- 
-    </RadioGroup>
-    
-    </TableRow>
+         android:layout_gravity="top"
+         android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/setbtn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="20dp"
-        android:text="Set" />
+         <TableRow
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:layout_gravity="top" >
 
-</LinearLayout>
+             <RadioGroup
+                 android:id="@+id/radioColor"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="top"
+                 android:layout_marginBottom="5dp" >
 
-</ScrollView>
+                 <RadioButton
+                     android:id="@+id/random"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:layout_marginTop="20dp"
+                     android:text="Random" />
+
+                 <RadioButton
+                     android:id="@+id/blue"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Blue" />
+
+                 <RadioButton
+                     android:id="@+id/green"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Green" />
+
+                 <RadioButton
+                     android:id="@+id/orange"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Orange" />
+
+                 <RadioButton
+                     android:id="@+id/red"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Red" />
+
+                 <RadioButton
+                     android:id="@+id/turquoise"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Turquoise" />
+
+                 <RadioButton
+                     android:id="@+id/midnight"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Midnight" />
+
+                 <RadioButton
+                     android:id="@+id/rasta"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Rasta" />
+
+                 <RadioButton
+                     android:id="@+id/beach"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Beach" />
+
+                 <RadioButton
+                     android:id="@+id/camo"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="5dp"
+                     android:text="Camo" />
+
+                 <RadioButton
+                     android:id="@+id/carbon"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="20dp"
+                     android:text="Carbon" />
+
+             </RadioGroup>
+         </TableRow>
+     </LinearLayout>
+ </ScrollView>
 
 </RelativeLayout>

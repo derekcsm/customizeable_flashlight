@@ -39,6 +39,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 import com.actionbarsherlock.app.SherlockActivity;
+import com.beardedhen.androidbootstrap.BootstrapButton;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
@@ -77,7 +78,7 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 	int colorscheme;
 	SlidingMenu menu;
 	RadioGroup radioGroup;
-	Button setbtn;
+	BootstrapButton setbtn;
 	String scheme;
 	View topleft;
 	View bottomleft;
@@ -112,7 +113,7 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		getSupportActionBar().hide();
+		//getSupportActionBar().hide();
 
 		setContentView(R.layout.main);
 
@@ -122,7 +123,7 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 		// menu.setShadowWidthRes(R.dimen.shadow_width);
 		// menu.setShadowDrawable(R.drawable.shadow);
 		menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
-		menu.setFadeDegree(0.33f);
+		menu.setFadeDegree(0.8f);
 		menu.setBehindWidthRes(R.dimen.menu_width);
 		menu.attachToActivity(this, SlidingMenu.SLIDING_WINDOW);
 		menu.setMenu(R.layout.menu);
@@ -132,7 +133,7 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 		right = findViewById(R.id.right);
 
 		radioGroup = (RadioGroup) findViewById(R.id.radioColor);
-		setbtn = (Button) findViewById(R.id.setbtn);
+		setbtn = (BootstrapButton) findViewById(R.id.setbtn);
 
 		setbtn.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
@@ -163,9 +164,7 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 		monbold = Typeface.createFromAsset(getAssets(), bold);
 		monreg = Typeface.createFromAsset(getAssets(), regular);
 
-		title = (TextView) findViewById(R.id.title);
-		title.setTypeface(monbold);
-		setbtn.setTypeface(monbold);
+		//setbtn.setTypeface(monbold);
 		radRandom = (RadioButton) findViewById(R.id.random);
 		radRandom.setTypeface(monreg);
 		radBlue = (RadioButton) findViewById(R.id.blue);
@@ -218,14 +217,14 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 				if (modeint == 0) {
 					solid = 1;
 					milliseconds = 500;
-					v.vibrate(15);
+					//v.vibrate(15);
 					if (mLightSwitch.isChecked()) {
 						check();
 					}
 				}
 				if (modeint == 1) {
 					milliseconds = 1000;
-					v.vibrate(15);
+					//v.vibrate(15);
 					if (mLightSwitch.isChecked()) {
 						solid = 0;
 						check();
@@ -234,41 +233,62 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 				if (modeint == 2) {
 					milliseconds = 800;
 					solid = 0;
-					v.vibrate(15);
+					//v.vibrate(15);
+					if (mLightSwitch.isChecked()) {
+						check();
+					}
 				}
 				if (modeint == 3) {
 					milliseconds = 600;
 					solid = 0;
-					v.vibrate(15);
+					//v.vibrate(15);
+					if (mLightSwitch.isChecked()) {
+						check();
+					}
 				}
 				if (modeint == 4) {
 					milliseconds = 420;
 					solid = 0;
-					v.vibrate(15);
+					//v.vibrate(15);
+					if (mLightSwitch.isChecked()) {
+						check();
+					}
 				}
 				if (modeint == 5) {
 					milliseconds = 330;
 					solid = 0;
-					v.vibrate(15);
+					//v.vibrate(15);
+					if (mLightSwitch.isChecked()) {
+						check();
+					}
 				}
 				if (modeint == 6) {
 					milliseconds = 280;
 					solid = 0;
-					v.vibrate(15);
+					//v.vibrate(15);
+					if (mLightSwitch.isChecked()) {
+						check();
+					}
 				}
 				if (modeint == 7) {
 					milliseconds = 200;
 					solid = 0;
-					v.vibrate(15);
+					//v.vibrate(15);
+					if (mLightSwitch.isChecked()) {
+						check();
+					}
 				}
 				if (modeint == 8) {
 					milliseconds = 150;
 					solid = 0;
-					v.vibrate(15);
+					//v.vibrate(15);
+					if (mLightSwitch.isChecked()) {
+						check();
+					}
 				}
 				if (modeint == 9) {
 					milliseconds = 100;
-					v.vibrate(15);
+					//v.vibrate(15);
 					if (mLightSwitch.isChecked()) {
 						solid = 0;
 						check();
@@ -277,7 +297,10 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 				if (modeint == 10) {
 					milliseconds = 50;
 					solid = 0;
-					v.vibrate(15);
+					//v.vibrate(15);
+					if (mLightSwitch.isChecked()) {
+						check();
+					}
 				}
 			}
 
@@ -322,7 +345,7 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 							mCamera.startPreview();
 							p = mCamera.getParameters();
 							check();
-							v.vibrate(22);
+							v.vibrate(15);
 							// playSound();
 							// layout.setBackgroundResource(R.drawable.radial_background);
 							toggler = "ON";
@@ -332,7 +355,7 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 							p = mCamera.getParameters();
 							p.setFlashMode(Parameters.FLASH_MODE_OFF);
 							mCamera.setParameters(p);
-							v.vibrate(22);
+							v.vibrate(15);
 							// playSound();
 							// layout.setBackgroundResource(R.drawable.bg);
 							toggler = "OFF";

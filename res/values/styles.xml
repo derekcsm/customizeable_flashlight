@@ -11,6 +11,10 @@
             backward-compatibility can go here.
         -->
     </style>
+    
+    <style name="Theme.Flashlight" parent="@android:style/Theme.Holo.NoActionBar">
+    <!-- -->
+</style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
