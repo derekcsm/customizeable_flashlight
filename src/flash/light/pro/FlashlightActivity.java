@@ -108,6 +108,7 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 	RadioButton radBeach;
 	RadioButton radCamo;
 	RadioButton radCarbon;
+	String checkOn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -699,6 +700,12 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 	protected void onDestroy() {
 		super.onDestroy();
 		ON = "off";
+		if (mLightSwitch.isChecked()) {
+			  checkOn = "ON";
+		  }
+		  else {
+			  checkOn = "OFF";
+		  }
 		if (mCamera != null) {
 			releaseCamera();
 			mAdView.destroy();

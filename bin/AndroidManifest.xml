@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flash.light.pro"
-    android:versionCode="3"
-    android:versionName="1.2" >
+    android:versionCode="5"
+    android:versionName="1.4" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -28,8 +28,8 @@
         <activity
             android:name="flash.light.pro.FlashlightActivity"
             android:label="@string/flashlight"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.Flashlight" >
+            android:theme="@style/Theme.Flashlight"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

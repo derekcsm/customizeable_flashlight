@@ -5,23 +5,12 @@
     android:background="#2a2d33"
     android:gravity="top" >
 
- <com.beardedhen.androidbootstrap.BootstrapButton
-     android:id="@+id/setbtn"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:layout_alignParentBottom="true"
-     android:layout_centerHorizontal="true"
-     android:text="SET"
-     android:textSize="30sp"
-     bootstrapbutton:bb_icon_left="fa-check"
-     bootstrapbutton:bb_size="large"
-     bootstrapbutton:bb_type="primary" />
-
  <ScrollView
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:layout_alignParentLeft="true"
-     android:layout_alignParentTop="true" >
+     android:layout_alignParentTop="true"
+     android:layout_above="@+id/buttonRow" >
 
      <LinearLayout
          android:layout_width="match_parent"
@@ -124,5 +113,28 @@
          </TableRow>
      </LinearLayout>
  </ScrollView>
+
+ <TableRow
+     android:id="@+id/buttonRow"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     android:background="#3276B1"
+     android:gravity="center_horizontal" >
+
+     <com.beardedhen.androidbootstrap.BootstrapButton
+         android:id="@+id/setbtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:text="SET"
+         android:textSize="46sp"
+         bootstrapbutton:bb_icon_left="fa-check"
+         bootstrapbutton:bb_size="large"
+         bootstrapbutton:bb_type="primary" >
+     </com.beardedhen.androidbootstrap.BootstrapButton>
+ </TableRow>
 
 </RelativeLayout>
