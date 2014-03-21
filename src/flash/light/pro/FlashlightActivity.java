@@ -235,41 +235,24 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 					milliseconds = 800;
 					solid = 0;
 					//v.vibrate(15);
-					if (mLightSwitch.isChecked()) {
-						check();
-					}
 				}
 				if (modeint == 3) {
 					milliseconds = 600;
 					solid = 0;
 					//v.vibrate(15);
-					if (mLightSwitch.isChecked()) {
-						check();
-					}
 				}
 				if (modeint == 4) {
 					milliseconds = 420;
 					solid = 0;
-					//v.vibrate(15);
-					if (mLightSwitch.isChecked()) {
-						check();
-					}
 				}
 				if (modeint == 5) {
 					milliseconds = 330;
 					solid = 0;
 					//v.vibrate(15);
-					if (mLightSwitch.isChecked()) {
-						check();
-					}
 				}
 				if (modeint == 6) {
 					milliseconds = 280;
 					solid = 0;
-					//v.vibrate(15);
-					if (mLightSwitch.isChecked()) {
-						check();
-					}
 				}
 				if (modeint == 7) {
 					milliseconds = 200;
@@ -282,18 +265,9 @@ public class FlashlightActivity extends SherlockActivity implements Callback {
 				if (modeint == 8) {
 					milliseconds = 150;
 					solid = 0;
-					//v.vibrate(15);
-					if (mLightSwitch.isChecked()) {
-						check();
-					}
 				}
 				if (modeint == 9) {
 					milliseconds = 100;
-					//v.vibrate(15);
-					if (mLightSwitch.isChecked()) {
-						solid = 0;
-						check();
-					}
 				}
 				if (modeint == 10) {
 					milliseconds = 50;
